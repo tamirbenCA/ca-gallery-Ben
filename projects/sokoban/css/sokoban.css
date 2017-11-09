@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-color: lightblue;
+    /* padding: 20px; */
+    border-bottom: 10px solid darkcyan;
+    color:darkcyan;
+    font-size: 2em;
+    font-style: bold;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.buttons {
+    text-align: center;
+    
+}
+table {
+    margin: auto;
+}
+
+.cell {
+    background-color: lightgray;
+    text-align: center;
+    height: 60px;
+    width: 60px;    
+    float: left;
+    margin: 1px;
+    font-size: 2em;
+    border: none;
+}
+
+
+.info {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+
+.btn {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+}

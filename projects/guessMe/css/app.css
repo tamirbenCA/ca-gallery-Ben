@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  background-color: #73AEDB;
+  text-align: center;
+  color: #780e56;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    background-color: lightcoral;
+  }
+}
+
+header > h1 {
+  font-size: 5em;
+  font-family: 'Lobster', cursive;
+  /* font-family: 'Pacifico', cursive; */
+  font-weight: bold;
+ }
+
+footer {
+  background-color:  black;
+  text-align: center;
+  color:lightblue;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header > img {
+  height: 250px;
+}
+
+.btn-back {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  cursor: pointer;
+}

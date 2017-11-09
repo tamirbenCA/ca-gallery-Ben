@@ -1,0 +1,50 @@
+.header {
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 10px solid darkcyan;
+    color:darkcyan;
+    font-size: 2em;
+    font-style: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+
+.header img {
+    float:right;
+}
+
+.info img {
+    float: right;
+    transition: width 2s, height 2s;
+    over
+}
+
+.board {
+    width: 700px;   
+}
+
+.card {
+    background-color: null;
+    height: 165px;
+    width: 165px;    
+    float: left;
+    margin: 5px;
+
+}
+
+.card img {
+    position: absolute;
+}
+
+.flipped .back {
+    display: none;
+}
+
+
+.btn {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+}

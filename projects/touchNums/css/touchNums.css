@@ -1,0 +1,46 @@
+.header {
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 10px solid darkcyan;
+    color:darkcyan;
+    font-size: 2em;
+    font-style: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+.tile {
+    background-color: lightseagreen;
+    text-align: center;
+    height: 50px;
+    width: 50px;    
+    float: left;
+    margin: 5px;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+
+.flipped {
+    background: white;
+    color: white;
+}
+
+.time {
+    width: 100px;
+    margin: auto;
+    /* margin-right: 200px; */
+}
+
+
+.btn {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+}

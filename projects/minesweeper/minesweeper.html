@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css\minesweeper.css"/>
+    
+</head>
+<body onload="initGame(gLevel)">
+    <header>
+        <h1>Minesweeper</h1>
+        <button type="button" class="btn btn-danger fa fa-step-backward" onclick="goBack()"> Go Back</button>
+    </header>
+</br>
+    <div class="buttons">
+        <button onclick="initGame(gLevel = { size: 4, mines: 2 })">Beginner</button>
+        <button onclick="initGame(gLevel = { size: 6, mines: 5 })">Medium</button>
+        <button onclick="initGame(gLevel = { size: 8, mines: 15 })">Expert</button>
+    </div>
+</br>
+    <div class="notice"></div>
+    <div>
+    <table class="board" border="1"></table>
+    </div>
+
+    <div class="info">
+    <div>Time: <span class="time"></span></div>
+    <div>Mines: <span class="minesCount"></span></div>
+    </div>
+
+
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/popper/popper.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/minesweeper.js"></script>    
+</body>
+</html>

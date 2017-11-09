@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    color: navy;
+}
+
+header {
+    text-align: center;
+}
+
+.picture {
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+.buttons {
+    text-align: center;
+}
+
+.buttons button {
+    width: 200px;
+    margin: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.btn {
+    /* width: 1rem; */
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+}

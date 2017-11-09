@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coding Academy</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/ca-gallery.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" onload="initPage()">
+
+  <div class="offcanvas-btn" onClick="openCanvas()">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+  </div>
+  <aside class="offcanvas-aside">
+
+  <!-- Contact -->
+  <section id="contact">
+    <h4>Contact Me</h4>
+    <form>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="sub">Subject:</label>
+          <input type="subject" class="form-control" id="SUBJECT">
+        </div>
+        <div class="form-group">
+            <label for="msg">Message Body:</label>
+            <textarea class="form-control" id="BODY" rows="3"></textarea>
+          </div>
+        <button type="button" class="btn btn-default" onclick="contactMe(event)"/>>Submit</button>
+      </form> 
+  </section>
+    
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Me</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To my Portfolio</div>
+        <div class="intro-heading">It's Nice To Meet You</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Specialities</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-user-md fa-stack-1x fa-inverse"></i>
+            </span>
+          <h4 class="service-heading">Fish Pathologist</h4>
+          <p class="text-muted">+10 years experience in fish disease and fish health</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+          <h4 class="service-heading">Responsive Design</h4>
+          <p class="text-muted">Coding Academy Student, Front-Hand focused in JS, HTML, CSS</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+            </span>
+          <h4 class="service-heading">SCUBA Diving Instructor</h4>
+          <p class="text-muted">Recreational, Tech and Closed-Circuit-Rebreather SCUBA instructor. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Portfolio</h2>
+          <h3 class="section-subheading text-muted">My projects for the first 3.5 weeks</h3>
+        </div>
+      </div>
+      <div class="row" id="my-portfolio">
+        <!-- Gallery render here -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Me -->
+  <section class="bg-light" id="team" style="padding: 0px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/Ben.jpg" alt="">
+            <h4>Ben Tamir</h4>
+            <p class="text-muted">B.Sc, M.A Marine Biologist
+                            <br>Coding Academy Student</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="http://www.facebook.com/tamirben">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="http://www.linkedin.com/in/ben-tamir-90a900ab/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-8 flex-align-center">
+            <p class="large text-muted  about-description">B.Sc from Michmoret-Ruppin academy in Marine Science.
+              M.A from Haifa University in Marine Civilization. +10 years experience working as a Research Assistant
+              in the National Center of Mariculture in the Fish Pathologist Dept.
+            <br><br>
+              Diving Instructor for all levels up to 45 meters CCR-Deco Diver. I also certificate as open-circuit and
+              closed-circuit trimix diver (up to 60 meters), equipment and cylender technicion and gas blender.
+            <br><br>
+              Hobbies: Diving, Photography, Escape-Rooms.</p>    
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 flex-align-center">
+        </div>
+        <div class="col-md-4 flex-align-center">
+        </div>
+        <div class="col-md-4 flex-align-center">
+          <a href="http://coding-academy.org" target="_blank">
+            <img src="./img/ca-logo.png" alt="">
+          </a>  
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Portfolio Modals -->
+  <!-- Modal render here -->
+  <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">    
+    <!-- <div id="protfolioModals"> -->
+  </div>
+  
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="lib/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/ca-gallery.js"></script>
+  <script src="js/offCanvas.js"></script>
+
+  <!-- My scripts -->
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

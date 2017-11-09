@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Monster memory game</title>
+  <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body onload = "whoIs(name)">
+    <div class="header">
+    <img src="img/layout/logo.png">
+    <h1>Memory Monsters</h1>
+    <button type="button" class="btn btn-danger fa fa-step-backward" onclick="goBack()"> Go Back</button>
+  </div>
+
+  <div class="board">
+  <div class="card" data-card="1" onclick="cardClicked(this)">
+    <img src="img/cards/1.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="1" onclick="cardClicked(this)">
+    <img src="img/cards/1.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+
+  <div class="card" data-card="2" onclick="cardClicked(this)">
+    <img src="img/cards/2.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="2" onclick="cardClicked(this)">
+    <img src="img/cards/2.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+
+  <div class="card" data-card="3" onclick="cardClicked(this)">
+    <img src="img/cards/3.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="3" onclick="cardClicked(this)">
+    <img src="img/cards/3.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+
+  <div class="card" data-card="4" onclick="cardClicked(this)">
+    <img src="img/cards/4.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="4" onclick="cardClicked(this)">
+    <img src="img/cards/4.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+
+  <div class="card" data-card="5" onclick="cardClicked(this)">
+    <img src="img/cards/5.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="5" onclick="cardClicked(this)">
+    <img src="img/cards/5.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+
+  <div class="card" data-card="6" onclick="cardClicked(this)">
+    <img src="img/cards/6.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="6" onclick="cardClicked(this)">
+    <img src="img/cards/6.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+
+  <div class="card" data-card="7" onclick="cardClicked(this)">
+    <img src="img/cards/7.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="7" onclick="cardClicked(this)">
+    <img src="img/cards/7.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+
+  <div class="card" data-card="8" onclick="cardClicked(this)">
+    <img src="img/cards/8.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+  <div class="card" data-card="8" onclick="cardClicked(this)">
+    <img src="img/cards/8.png">
+    <img class="back" src="img/cards/back.png">
+  </div>
+</div>
+
+<div class = 'sidebar'>
+  <div class = 'bestTime'>
+    Best time: <document.querySelector('.bestTime')
+  </p>
+  </p>
+  </p>
+
+    <div class = 'newGame'>
+        <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999;
+        -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999;
+        font-size: 150%;"
+        type="button" value="New Game" onclick="newGame()"/>
+        </form>
+    </div>
+
+    <div class = 'newPlayer'>
+        <input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999;
+        -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999;
+        font-size: 150%;"
+        type="button" value="Change player" onclick="whoIs()"/>
+        </form>
+    </div>
+</p>
+</div>
+
+
+
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/popper/popper.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

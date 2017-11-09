@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guess My Number!</title>
+    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/guessGameStyle.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Guess My Number!</h1>
+        <button type="button" class="btn btn-danger fa fa-step-backward" onclick="goBack()"> Go Back</button>
+        <img src="img/guess.png">
+        <h2>I'm thinking about a number between 1 to 5</h2>
+        <h2>Can you guess it?</h2>
+        <br>
+        <div class = "button"> 
+            <button class="button" onClick="guessGame()">Guess!</button>
+        </div>
+        <br>
+    </div>
+
+
+    <div class="answer">
+        <table>
+            <tbody id="answerArea"></tbody>
+        </table>
+    </div>
+
+    
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/popper/popper.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/guessGame.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon</title>
+    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/simon.css">
+</head>
+<body onload="initGame()">
+    <header>
+        <h1>Simon Memory Game</h1>
+        <button type="button" class="btn btn-danger fa fa-step-backward" onclick="goBack()"> Go Back</button>
+    </header>
+
+    <div class="buttons">
+        <button class="button red" onclick="playerTurn('red')" style="background-color: red" ></button>
+        <button class="button yellow" onclick="playerTurn('yellow')" style="background-color: yellow" ></button>
+        <button class="button blue" onclick="playerTurn('blue')" style="background-color: blue" ></button>
+        <button class="button green" onclick="playerTurn('green')" style="background-color: green" ></button>
+    </div>
+
+
+
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/popper/popper.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/simon.js"></script>        
+</body>
+</html>

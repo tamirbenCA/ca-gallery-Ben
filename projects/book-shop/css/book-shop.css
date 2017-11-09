@@ -1,0 +1,16 @@
+html {
+    background-image: url("../img/background.jpg");
+}
+
+.sort {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+.backBtn {
+    position: absolute;
+    top: 1%;
+    right: 30%;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+
+header {
+    text-align: center;
+}
+
+.button {
+    height: 100px;
+    width: 100px;
+    border: none;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.mark {
+    border: 5px solid black;
+}
+
+
+.btn {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+}

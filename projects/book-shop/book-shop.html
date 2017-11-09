@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop!</title>
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/book-shop.css">
+    
+
+    
+</head>
+
+<body class="container" onload="initPage()">
+    <h1>Welcome to Ben's Book Shop!</h1>
+    <button type="button" class="btn btn-danger fa fa-step-backward backBtn" onclick="goBack()"> Go Back</button>
+
+    <div class="books-table">
+        <table class="table">
+            <thead class="thead-dark"> 
+                <tr>
+                    <th scope="col">#</th>
+                    <!-- <th scope="col">Title <span class="sort" onclick="sortByName()">sort <i class="fa fa-arrow-down" aria-hidden="true"></i></span></th> -->
+                    <th scope="col">Title <span class="sort" onclick="sortBy('name')">sort <i class="fa fa-arrow-down" aria-hidden="true"></i></span></th>
+                    <!-- <th scope="col">Price <span class="sort" onclick="sortByPrice()">sort <i class="fa fa-arrow-down" aria-hidden="true"></i></span></th> -->
+                    <th scope="col">Price <span class="sort" onclick="sortBy('price')">sort <i class="fa fa-arrow-down" aria-hidden="true"></i></span></th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <!-- Render table here -->
+            <tbody class="books-list">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <button type="button" class="btn btn-link" onclick="addNewBook()">Add New Item List</button> -->
+    <button type="button" class="btn btn-link" data-toggle="modal" onclick="addNewBook()" data-target="#addBookModal">Add New Items List</button>
+        
+    <!-- Modal -->
+    <div class="modal fade" id="bookModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <div class="modal fade" id="addBookModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    
+    
+    <script src="../../lib/jquery/jquery.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/book-shop.js"></script>
+
+</body>
+</html>

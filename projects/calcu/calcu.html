@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ben's Calculator</title>
+    <link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="css/calcu.css">
+</head>
+<body>
+    <div class="screen" dir="rtl"></div>
+   <table>
+    <!-- <tr class="screen">
+        <td colspan="5"></td>
+    </tr> -->
+    <tr id="firstRow">
+        <td><button class="calc" onclick="addToMemory('mc')">MC</button></td>
+        <td><button class="calc" onclick="addToMemory('mr')">MR</button></td>
+        <td><button class="calc" onclick="addToMemory('ms')">MS</button></td>
+        <td><button class="calc" onclick="addToMemory('mp')">M+</button></td>
+        <td><button class="calc" onclick="addToMemory('mm')">M-</button></td>
+    </tr>
+    <tr id="secondRow">
+        <td><button class="calc" onclick="addDigit('7')">7</button></td>
+        <td><button class="calc" onclick="addDigit('8')">8</button></td>
+        <td><button class="calc" onclick="addDigit('9')">9</button></td>
+        <td><button class="calc" onclick="arithmetic('/')">/</button></td>
+        <td><button class="calc" onclick="del()">⌫</button></td>
+    </tr>
+    <tr id="thirdRow">
+        <td><button class="calc" onclick="addDigit('4')">4</button></td>
+        <td><button class="calc" onclick="addDigit('5')">5</button></td>
+        <td><button class="calc" onclick="addDigit('6')">6</button></td>
+        <td><button class="calc" onclick="arithmetic('*')">*</button></td>
+        <td><button class="calc" onclick="clearNum()">C</button></td>
+    </tr>
+    <tr id="forthRow">
+        <td><button class="calc" onclick="addDigit('1')">1</button></td>
+        <td><button class="calc" onclick="addDigit('2')">2</button></td>
+        <td><button class="calc" onclick="addDigit('3')">3</button></td>
+        <td><button class="calc" onclick="arithmetic('-')">-</button></td>
+        <td rowspan="2" id="equal"><button class="calc" onclick="arithmetic('=')">=</button></td>
+    </tr>
+    <tr id="fifthRow">
+        <td colspan="2"><button class="calc" onclick="addDigit('0')">0</button></td>
+        <td><button class="calc" onclick="addDigit('.')">.</button></td>
+        <td><button class="calc" onclick="arithmetic('+')">+</button></td>
+    </tr>
+   </table>
+
+   <input type="radio" name="base" id="dec" onchange = "getBase('dec')" checked="checked">Dec<br>
+   <input type="radio" name="base" id="bin" onchange = "getBase('bin')">Bin<br>
+   <input type="radio" name="base" id="oct" onchange = "getBase('oct')">Oct<br>
+   <input type="radio" name="base" id="hex" onchange = "getBase('hex')">Hex<br>
+   
+   <button type="button" class="btn btn-danger fa fa-step-backward" onclick="goBack()"> Go Back</button>
+   
+
+
+   <script src="../../lib/jquery/jquery.min.js"></script>
+   <script src="../../lib/popper/popper.min.js"></script>
+   <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+   <script src="../../lib/jquery-easing/jquery.easing.min.js"></script>
+   <script src=js/calcu.js></script>
+</body>
+</html>
