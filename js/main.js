@@ -98,9 +98,18 @@ function initPage() {
             name: 'guessMe',
             title: 'Guess Me',
             desc: 'Akinator game. Think of a person and the computer will try to guess him / her',
-            descL: 'Akinator game is very like the game \'21 Questions\' where the computer guess a person the player is thinking on. This game was build with jQuery.',
+            descL: 'Akinator game is very like the game \'20 Questions\' where the computer guess a person the player is thinking on. This project was build with jQuery.',
             date: 'November 2017',
             category: 'Games'
+        },
+        {
+        id: 12,
+        name: 'memoryLogos',
+        title: 'Dev Logos Memory',
+        desc: 'Play Dev-Companies card memory game',
+        descL: 'Card memory game based on the enrolling "monsterMemory" project. This project was for practicing flexbox.',
+        date: 'November 2017',
+        category: 'Games'
         }
     ]
     renderGallery();

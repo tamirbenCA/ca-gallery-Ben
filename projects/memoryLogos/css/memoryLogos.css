@@ -1,0 +1,101 @@
+.header {
+    /* background-color: lightblue; */
+    background-image: url("../img/header.jpg");
+    background-repeat: round;
+    border-bottom: 10px solid darkcyan;
+    color:darkcyan;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background: lightblue;
+}
+
+.board {
+    display: flex;
+    align-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex: 1;    
+    min-width: 165px;
+    max-width: 165px;
+    min-height: 165px;
+    max-height: 165px;
+    /* position: relative; */
+    /* float:left; */
+    margin: 10px 10px 40px;
+    perspective: 800px;
+}
+
+    .container p {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        margin: auto;
+        transform: rotateY( 180deg );
+        font-weight: bold;
+        /* background-color: white; */
+    }
+
+.card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+  
+.card img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+    
+    
+.card.flipped {
+    transform: rotateY( 180deg );
+}
+
+  .card .back {
+    transform: rotateY( 180deg );
+}
+
+
+@media screen and (max-width: 700px) { 
+    .container {
+        min-width: 100px;
+        max-width: 100px;
+        min-height: 100px;
+        max-height: 100px;
+        margin: 5px 5px 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape) {
+    .header {
+        font-size: 0.8em;
+        padding: 2px;
+    }
+}
+
+
+.btn {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    cursor: pointer;
+}
