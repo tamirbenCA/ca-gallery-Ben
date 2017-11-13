@@ -117,7 +117,7 @@ function initPage() {
 
 
 function renderGallery() {
-    for (var i = 0; i < gProjects.length; i++) {
+    for (var i = gProjects.length-1; i >= 0; i--) {
         var strHtml = '';
         strHtml += '<div class="col-md-4 col-sm-6 portfolio-item">' +
             ' <a class="portfolio-link" data-toggle="modal" onclick="renderModal(' + i + ')" href="#portfolioModal"> ' +
