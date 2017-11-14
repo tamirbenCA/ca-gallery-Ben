@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Coding Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <!-- Header Container -->
+  <section class="header flex">
+    <!--  Main Nav -->
+    <nav class="main-nav flex align-center">
+      <ul class="clean-list main-nav__logo">
+        <li>
+          <img src="img/logo.png" alt="blogin">
+        </li>
+      </ul>
+      <input type="checkbox" id="main-nav__mobile-checkbox">
+      <label for="main-nav__mobile-checkbox" class="main-nav__mobile-icon">&#9776;</label>
+      <div class="main-nav__inner">
+        <ul class="clean-list main-nav__items flex">
+          <li id="first-nav" class="nav-menu">
+            <a href="#" class="main-nav__item">journal</a>
+          </li>
+          <li class="nav-menu">
+            <a href="#" class="main-nav__item">about</a>
+          </li>
+          <li class="nav-menu">
+            <a href="#" class="main-nav__item">work</a>
+          </li>
+          <li class="nav-menu">
+            <a href="#" class="main-nav__item">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <!--  End  Main Nav -->
+  
+  <!-- <button type="button" class="btn btn-danger fa fa-step-backward backBtn" onclick="goBack()"> Go Back</button> -->
+  
+  <!--  Main Body -->
+  <section class="inner-container">
+    <article class="article-preview flex">
+      <div>
+        <img src="img/image1.png" alt="" class="img-responsive article-preview__img">
+      </div>
+      <div class="article-text">
+        <p class="article-preview__title">Duis aute irure dolor in henderit in voluptate.</p>
+        <p class="article-preview__summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis non, sit voluptates laborum officiis modi explicabo
+          animi enim commodi unde eveniet ab optio dignissimos libero expedita quasi rerum aliquam nesciunt.
+        </p>
+        <a href="#popup1">continue reading</a>
+      </div>
+    </article>
+
+    <article class="article-preview flex">
+      <div>
+        <img src="img/image2.png" alt="" class="img-responsive article-preview__img">
+      </div>
+      <div class="article-text">
+        <p class="article-preview__title">Duis aute irure dolor in henderit in voluptate.</p>
+        <p class="article-preview__summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis non, sit voluptates laborum officiis modi explicabo
+          animi enim commodi unde eveniet ab optio dignissimos libero expedita quasi rerum aliquam nesciunt.
+        </p>
+        <a href="#popup1">continue reading</a>
+      </div>
+    </article>
+
+    <article class="article-preview flex">
+      <div>
+        <img src="img/image3.png" alt="" class="img-responsive article-preview__img">
+      </div>
+      <div class="article-text">
+        <p class="article-preview__title">Duis aute irure dolor in henderit in voluptate.</p>
+        <p class="article-preview__summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis non, sit voluptates laborum officiis modi explicabo
+          animi enim commodi unde eveniet ab optio dignissimos libero expedita quasi rerum aliquam nesciunt.
+        </p>
+        <a href="#popup1">continue reading</a>
+      </div>
+    </article>
+
+    <div class="flex align-center justify-center space-between home__load-more-section">
+      <button class="home__load-more-btn">⟵ previus</button>
+      <button class="home__load-more-btn">next ⟶</button>
+    </div>
+
+  </section>
+  <!-- End Main Body -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container full-height">
+      <section class="logo-footer flex justify-center">
+        <img src="img/logo-footer.png" alt="blogin">
+      </section>
+      <section class="inner-container-footer flex justify-center">
+        <ul class="clean-list flex">
+          <li> © 2014 Blogin.com - All Rights Reserved - Find More Free Templates at
+            <a href="www.pixelhint.com">pixelhint.com</a>
+          </li>
+        </ul>
+      </section>
+      <section class="link-logos flex justify-center">
+        <a href="www.facebook.com">
+          <div class="box-icon facebook">
+            <img src="img/f.png">
+          </div>
+        </a>
+        <a href="www.twitter.com">
+          <div class="box-icon twitter">
+            <img src="img/t.png">
+          </div>
+        </a>
+        <a href="www.dribbble.com">
+          <div class="box-icon dribbble">
+            <img src="img/d.png">
+          </div>
+        </a>
+        <a href="www.behance.com">
+          <div class="box-icon behance">
+            <img src="img/b.png">
+          </div>
+        </a>
+      </section>
+    </div>
+  </footer>
+  <!-- End Main Footer -->
+
+  <!-- Modal -->
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Join us to get access to the latest stories!</h2>
+      <a class="close" href="#">×</a>
+      <div class="content">
+        To keep in touch enter your e-mail:
+        <input type="text">
+        <a href="#"><button>Submit</button></a>
+      </div>
+    </div>
+  </div>
+<!-- End Modal -->
+
+
+<script src="js/misterBlooger.js"></script>
+
+</body>
+
+</html>

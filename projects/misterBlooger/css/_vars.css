@@ -1,0 +1,13 @@
+:root {
+  /* Layout */
+  --container-width: 1500px;
+  --inner-container-width: 980px;
+  /* Fonts */
+  --primary-font: Playfair;
+  --secondary-font: Ubuntu;
+  /* Colors */
+  --main-color: #626262;
+  --sections-bg: #f0f0f0;
+}
+
+

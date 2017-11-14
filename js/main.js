@@ -110,7 +110,16 @@ function initPage() {
         descL: 'Card memory game based on the enrolling "monsterMemory" project. This project was for practicing flexbox.',
         date: 'November 2017',
         category: 'Games'
-        }
+        },
+        {
+            id: 13,
+            name: 'misterBlooger',
+            title: 'Mister Blooger Webpage',
+            desc: 'Build a webpage from .psd file using CSS only (no JS)',
+            descL: 'A project to build a webpage from a .psd file using flexbox and CSS.',
+            date: 'November 2017',
+            category: 'web Page'
+            }
     ]
     renderGallery();
 }

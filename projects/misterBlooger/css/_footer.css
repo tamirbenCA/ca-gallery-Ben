@@ -1,0 +1,56 @@
+.main-footer {
+    background-color: #f8f8f8;
+    height: 315px;
+    padding-top: 80px;
+}
+
+.full-height {
+    align-items: center;
+}
+
+.inner-container-footer {
+    font-size: 13px;
+    max-height: 12px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.inner-container-footer a {
+    font-weight: 700;
+}
+
+.logo-footer {
+    padding-bottom: 30px;
+}
+
+
+.link-logos {
+    font-size: 40px;
+}
+
+.box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    margin: 10px;
+}
+
+.box-icon a {
+    align-items: center;    
+    justify-content: center;    
+}
+.facebook:hover {
+    background-color: blue;
+}
+.twitter:hover {
+    background-color: lightblue;
+}
+.dribbble:hover {
+    background-color: pink;
+}
+.behance:hover {
+    background-color: blue;
+}
