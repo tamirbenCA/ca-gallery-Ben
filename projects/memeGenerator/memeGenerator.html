@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+
+</head>
+
+<body onload="initPage()">
+    <header>
+        <div class="container nav-bar" id="top">
+            <label for="phone-menu" class="mobile-icon">&#9776;</label>
+            <input type="checkbox" id="phone-menu" onclick="toggleMenu()">
+            <div class="mobile-menu">
+                <ul>
+                    <li onclick="closeMenu()">
+                        <a href="#canvas">Generator</a>
+                    </li>
+                    <li>
+                        <img class="rec" src="img/logo.png">
+                    </li>
+                    <li onclick="closeMenu()">
+                        <a href="#about-us">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="meme-section hide-meme-section">
+        <section class="meme-generator">
+            <div class="canvas-containor">
+                <!-- add class hidden and remove class by js -->
+                <canvas class="canvas-rtl" id="canvas" width="500" height="350">
+                    Sorry, no canvas available
+                </canvas>
+            </div>
+            <div class="control">
+                <div class="editor">
+                    <div class="input-containor">
+                        <input type="text" class="input-text input-top input-rtl" onkeyup="renderRow()" placeholder="הכנס טקסט כאן" />
+                    </div>
+                    <!-- <section class="top-buttons"> -->
+                    <section class="edit-buttons">
+                        <button class="align-right" onclick="alignText('right', 0)"></button>
+                        <button class="align-center" onclick="alignText('center', 0)"></button>
+                        <button class="align-left" onclick="alignText('left', 0)"></button>
+                        <div class="dropdown">
+                            <button class="font-type" onclick="showDropdown('.dropdown-content-top')"></button>
+                            <div class="dropdown-content dropdown-content-top">
+                                <p onclick="setFont('Sans-Serif', 0, '.dropdown-content-top')">Sans-Serif</p>
+                                <p onclick="setFont('Verdana', 0, '.dropdown-content-top')">Verdana</p>
+                                <p onclick="setFont('Courier New bold', 0, '.dropdown-content-top')">Courier New</p>
+                            </div>
+                        </div>
+                        <button class="font-inc" onclick="changeFontSize('inc', 0)"></button>
+                        <button class="font-dec" onclick="changeFontSize('dec', 0)"></button>
+                        <input type="color" class="font-color top-color" value="#ffffff" onchange="changeColor(value, 0)">
+                        <button class="shadow" onclick="shadowEffect(0)"></button>
+                        <button class="trash" onclick="dismissRow(0)"></button>
+                    </section>
+                    <section class="buttons-movement">
+                        <button class="move-right" onclick="moveText('right', 0)"></button>
+                        <button class="move-up" onclick="moveText('up', 0)"></button>
+                        <button class="move-down" onclick="moveText('down', 0)"></button>
+                        <button class="move-left" onclick="moveText('left', 0)"></button>
+                    </section>
+                    <!-- </section> -->
+                </div>
+                <div class="editor">
+                    <div class="input-containor">
+                        <input type="text" class="input-text input-bottom input-rtl" onkeyup="renderRow()" placeholder="הכנס טקסט כאן" />
+                    </div>
+                    <section class="bottom-buttons">
+                        <section class="edit-buttons">
+                            <button class="align-right" onclick="alignText('right', 1)"></button>
+                            <button class="align-center" onclick="alignText('center', 1)"></button>
+                            <button class="align-left" onclick="alignText('left', 1)"></button>
+                            <div class="dropdown">
+                                <button class="font-type" onclick="showDropdown('.dropdown-content-bottom')"></button>
+                                <div class="dropdown-content dropdown-content-bottom">
+                                    <p onclick="setFont('Sans-Serif', 1, '.dropdown-content-bottom')">Sans-Serif</p>
+                                    <p onclick="setFont('Verdana', 1, '.dropdown-content-bottom')">Verdana</p>
+                                    <p onclick="setFont('Courier New bold', 1, '.dropdown-content-bottom')">Courier New</p>
+                                </div>
+                            </div>
+                            <button class="font-inc" onclick="changeFontSize('inc', 1)"></button>
+                            <button class="font-dec" onclick="changeFontSize('dec', 1)"></button>
+                            <input type="color" class="font-color bottom-color" value="#ffffff" onchange="changeColor(value, 1)">
+                            <button class="shadow" onclick="shadowEffect(1)"></button>
+                            <button class="trash" onclick="dismissRow(1)"></button>
+                        </section>
+                        <section class="buttons-movement">
+                            <button class="move-right" onclick="moveText('right', 1)"></button>
+                            <button class="move-up" onclick="moveText('up', 1)"></button>
+                            <button class="move-down" onclick="moveText('down', 1)"></button>
+                            <button class="move-left" onclick="moveText('left', 1)"></button>
+                        </section>
+                    </section>
+                </div>
+                <section class="download-area">
+                    <button class="text-direction" onclick="textDirection()"></button>
+                    <a href="#" id="download" onclick="downloadImg(this)">Download image</a>
+                </section>
+            </div>
+        </section>
+    </section>
+
+    <br>
+    <section class="search-section">
+        <input type="text" id="userSearch" onkeyup="renderSearch()" placeholder="Search for images..." />
+        <button class="tagCloud" onclick="tagCloud()">Tag Cloud</button>
+        <input type="file" class="inputfile" id="imageLoader" style="color:transparent;" onchange="this.style.color = 'black';" accept="image/x-png,image/gif,image/jpeg"
+        />
+        <button class="upload-button">
+            <label for="imageLoader">Upload photo</label>
+        </button>
+    </section>
+
+
+    <div class="meme-gallery"></div>
+    <!-- meme gallery render here -->
+
+    <div id="about-us">
+        <img class="profile-img" id="ben-photo" src="img/ben_about_us.jpg" />
+        <div class="about">
+            <h2>Ben Tamir</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium? Dolor, sit sapiente reiciendis recusandae, at molestias
+                tenetur amet omnis ex, sint eligendi sed earum. Dignissimos repellat voluptas vero autem!
+            </p>
+        </div>
+    </div>
+    <div id="about-us2">
+        <div class="about">
+            <h2>Alice Chursa</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium? Dolor, sit sapiente reiciendis recusandae, at molestias
+                tenetur amet omnis ex, sint eligendi sed earum. Dignissimos repellat voluptas vero autem!
+            </p>
+        </div>
+        <img class="profile-img" id="alice-photo" src="img/alice_about_us.jpg" />
+    </div>
+
+    
+<script src="js/memeGenerator.js"></script>
+<!-- <script src="js/main.test.js"></script> -->
+</body>
+
+</html>
