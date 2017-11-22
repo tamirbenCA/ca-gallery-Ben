@@ -112,14 +112,41 @@ function initPage() {
         category: 'Games'
         },
         {
-            id: 13,
-            name: 'misterBlooger',
-            title: 'Mister Blooger Webpage',
-            desc: 'Build a webpage from .psd file using CSS only (no JS)',
-            descL: 'A project to build a webpage from a .psd file using flexbox and CSS.',
-            date: 'November 2017',
-            category: 'web Page'
-            }
+        id: 13,
+        name: 'misterBlooger',
+        title: 'Mister Blooger Webpage',
+        desc: 'Build a webpage from .psd file using CSS only (no JS)',
+        descL: 'A project to build a webpage from a .psd file using flexbox and CSS.',
+        date: 'November 2017',
+        category: 'Web Page'
+        },
+        {
+        id: 14,
+        name: 'todos',
+        title: 'Todo task reminder',
+        desc: 'Todo task where one can orginize all his duties and reminders.',
+        descL: 'Added options to orginize the tasks (all, active, done), add new tasks and delete old ones.',
+        date: 'November 2017',
+        category: 'Misc Apps'
+        },
+        {   
+        id: 15,
+        name: 'pacman',
+        title: 'Pacman Calassic Game',
+        desc: 'Classic Pacman game, can you clear the board without the ghosts catch you?',
+        descL: 'Pacman game build on matrix model, we had to continue a started project with several files.',
+        date: 'November 2017',
+        category: 'Games'
+        },
+        {
+        id: 16,
+        name: 'memeGenerator',
+        title: 'Meme generator',
+        desc: 'Meme Generator ',
+        descL: 'The 2nd sprint of CA course. Team of twos where we have been asked to build a functional Meme Generator app works both on desktop machine and mobile, includes upload your own photo and download the result.',
+        date: 'November 2017',
+        category: 'Web Page'
+        },
     ]
     renderGallery();
 }

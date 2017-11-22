@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Academy</title>
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initPage()">
+    <div class="paper">
+        <header>
+            <h1>Todos</h1>
+            <div class="radioButtons">
+                <input type="radio" name="base" id="all" onchange = "filterList('all')" checked="checked">
+                <label for="all"><span></span>All</label><br>
+                <input type="radio" name="base" id="active" onchange = "filterList('active')">
+                <label for="active"><span></span>Active</label><br>                
+                <input type="radio" name="base" id="done" onchange = "filterList('done')">
+                <label for="done"><span></span>Done</label><br>
+            </div>
+        </header>
+        <button type="button" class="btn btn-danger fa fa-step-backward backBtn" onclick="goBack()"> Go Back</button>
+        <div class="content">
+            <ul class="todos clean-list">
+                <!-- render Todos here -->
+            </ul>
+        </div>
+        <input type="text" class="form-control" id="newTodo">
+        <button type="button" class="addNew" onclick="addNewTodo()">Add New Todo</button>
+    </div>
+
+
+    <script src="js/todos.js"></script>
+</body>
+
+</html>
