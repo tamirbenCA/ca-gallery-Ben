@@ -73,3 +73,10 @@ body {
   src: url('../fonts/PacFont.ttf');
   font-weight: 400;
 }
+
+.backBtn {
+  /* float: right; */
+  position: absolute;
+  right: 350px;
+  top: 10px;
+}

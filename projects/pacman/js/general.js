@@ -42,3 +42,9 @@ function getFromStorage(key) {
   var str = localStorage.getItem(key);
   return JSON.parse(str);
 } 
+
+
+
+function goBack() {
+  window.history.back();
+}
