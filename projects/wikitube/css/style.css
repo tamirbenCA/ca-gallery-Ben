@@ -1,0 +1,119 @@
+body {
+    background-color: turquoise;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+header img {
+    max-height: 150px;
+}
+
+section {
+    padding: 10px;
+}
+
+.video-list {
+    height: 90vh;
+    width: 40vw;
+}
+
+.video-list img {
+    cursor: pointer;
+}
+
+.video-list div {
+    display: flex;
+    padding: 10px;
+}
+
+.video-list h4 {
+    padding: 10px;
+}
+/* 
+.search-input {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.search-input input {
+    /* width: 400px; */
+    width: 70%;
+}
+
+.wiki-data {
+    width: 50vw;
+    line-height: 1.5em;
+}
+
+.wiki-data h2 {
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 450px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 99%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header h2 {
+        font-size: 0.8em;
+    }
+    
+    header img {
+        max-height: 10vh;
+    }
+    
+    .video-list img {
+        width: 200px;
+    }
+
+    .video-list div {
+        /* flex-direction: row; */
+        flex-direction: column;
+    }
+
+    .search-input {
+        order: 1;
+    }
+    .left-side {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .play-video {
+        order: 2;
+    }
+
+    .wiki-data {
+        order: 3;
+        width: 95%;
+        text-align: justify;
+    }
+
+    .video-list {
+        order: 4;
+        width: 95%;
+    }
+    .video-list div {
+        align-items:  center;
+    }
+}

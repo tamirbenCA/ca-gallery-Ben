@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" />        
+    <title>WikiTube by Ben Tamir</title>
+</head>
+<body onload="initPage()">
+    
+    <header>
+        <img src="img/youTube.png"/>
+        <div>
+            <h1>WikiTube</h1>    
+            <h2>The ultimate cross-search engine for YouTube & Wikipedia</h2>
+        </div>
+        <img src="img/wikipedia.png"/>
+    </header>
+
+    <main>
+        <section class="video-list">
+            <!-- render top video here -->
+        </section>
+
+        <section class="left-side">
+            <section class="search-input">
+                <input type="text" class="user-input" placeholder="Search video">
+                <button type="button" onclick="searchYouTube()">Search</button>
+            </section>
+
+
+            <section class="play-video">
+                <!-- render main video here -->
+                <iframe id="video-player" width="500" height="375" src="" frameborder="0" allowfullscreen></iframe>
+            </section>
+
+
+            <section class="wiki-data">
+                <!-- render wikipedia data here -->
+            </section>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
