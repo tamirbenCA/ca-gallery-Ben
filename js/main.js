@@ -147,6 +147,25 @@ function initPage() {
         date: 'November 2017',
         category: 'Web Page'
         },
+        {
+        id: 17,
+        name: 'wikiTube',
+        title: 'Wiki Tube',
+        desc: 'Lorem....',
+        descL: 'Lorem....',
+        date: 'November 2017',
+        category: 'Web Page'
+        },
+        {
+        id: 18,
+        name: 'travelTip',
+        title: 'Travel Tip',
+        desc: 'Lorem....',
+        descL: 'Lorem....',
+        date: 'November 2017',
+        category: 'Web Page'
+        },
+        
     ]
     renderGallery();
 }
