@@ -86,7 +86,7 @@ function initPage() {
         },
         {
             id: 10,
-            name: 'book-shop',
+            name: 'bookShop',
             title: 'Books R Us',
             desc: 'Manage books interface for the book-shop-owener',
             descL: 'Web page with a list of books. One can edit the price, delete the entry, add new item, sort the list and many more valuable options.',
@@ -142,7 +142,7 @@ function initPage() {
         id: 16,
         name: 'memeGenerator',
         title: 'Meme generator',
-        desc: 'Meme Generator ',
+        desc: 'Meme Generator, responsive',
         descL: 'The 2nd sprint of CA course. Team of twos where we have been asked to build a functional Meme Generator app works both on desktop machine and mobile, includes upload your own photo and download the result.',
         date: 'November 2017',
         category: 'Web Page'
@@ -151,7 +151,7 @@ function initPage() {
         id: 17,
         name: 'wikiTube',
         title: 'Wiki Tube',
-        desc: 'Lorem....',
+        desc: 'The ultimate cross-search engine for YouTube & Wikipedia, responsive',
         descL: 'Lorem....',
         date: 'November 2017',
         category: 'Web Page'
@@ -160,7 +160,7 @@ function initPage() {
         id: 18,
         name: 'travelTip',
         title: 'Travel Tip',
-        desc: 'Lorem....',
+        desc: 'Goole Map meets Open Weather. All in one page: Position Location, Weather at position, Search places on the map',
         descL: 'Lorem....',
         date: 'November 2017',
         category: 'Web Page'
@@ -217,7 +217,7 @@ function renderModal(i) {
         '<li>Category: ' + gProjects[i].category + '</li>' +
         '</ul>' +
         '<br>' +
-        '<a href="projects/' + gProjects[i].name + '/' + gProjects[i].name + '.html" class="btn btn-success active" role="button" aria-pressed="true">Run This Project</a>' +
+        '<a href="projects/' + gProjects[i].name + '/' + 'index.html" class="btn btn-success active" role="button" aria-pressed="true">Run This Project</a>' +
         '<br><br>' +
         '<button class="btn btn-primary" data-dismiss="modal" type="button">' +
         '<i class="fa fa-times"></i>' +

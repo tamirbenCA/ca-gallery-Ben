@@ -1,7 +1,7 @@
-'use strickt'
+'use strict'
 
-var GOOGLE_API_KEY = 'AIzaSyCkGXo73iO3SNrjIp9hxptFfE5duOCgKk4';
-var OPEN_WEATHER_API_KEY = 'f7af7bcad8d3440422ef08ca9f6992ec';
+const GOOGLE_API_KEY = 'AIzaSyCkGXo73iO3SNrjIp9hxptFfE5duOCgKk4';
+const OPEN_WEATHER_API_KEY = 'f7af7bcad8d3440422ef08ca9f6992ec';
 var gMyPos = {};
 
 function initPage() {
@@ -24,8 +24,8 @@ function showLocation(position) {
     gMyPos.lng = position.coords.longitude;
     initMap(position.coords.latitude, position.coords.longitude);
     // console.log('pos:', position);
-    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${GOOGLE_API_KEY}`).then(getAddress);
-    axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&APPID=${OPEN_WEATHER_API_KEY}`).then(getWeather);
+    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${gMyPos.lat},${gMyPos.lng}&key=${GOOGLE_API_KEY}`).then(getAddress);
+    axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${gMyPos.lat}&lon=${gMyPos.lng}&units=metric&APPID=${OPEN_WEATHER_API_KEY}`).then(getWeather);
 }
 
 function handleLocationError(error) {
@@ -51,20 +51,21 @@ function initMap(lat, lng) {
     var map = new google.maps.Map(
         document.querySelector('#map'),
         {
-            center: { lat: lat, lng: lng },
+            // same as {lat: lat, lng: lng}
+            center: { lat, lng },
             zoom: 17
         }
     );
 
     var marker = new google.maps.Marker({
-        position: { lat: lat, lng: lng },
+        position: { lat, lng },
         map: map,
         // title: 'Hello World!'
     });
 }
 
 function getAddress(obj) {
-    console.log('address:', obj.data.results)
+    // console.log('address:', obj.data.results)
     var geoAddress = obj.data.results[0].address_components[2].long_name;
     // var geoAddress = obj.data.results[2].address_components[0].long_name;
     // var elGeoAddress = document.querySelector('.geo-address');
@@ -85,7 +86,7 @@ function getLatLng() {
 }
 
 function getWeather(obj) {
-    // console.log(obj.data);
+    console.log(obj.data);
     document.querySelector('.curr-temp').innerText = obj.data.main.temp;
     document.querySelector('.wind-spd').innerText = obj.data.wind.speed;
     document.querySelector('.max-temp').innerText = obj.data.main.temp_max;
@@ -98,12 +99,12 @@ function getWeather(obj) {
 
 
 
-function Copy() {
+function copy() {
     var myLocationLink = `https://www.google.com/maps/place/${gMyPos.lat}+${gMyPos.lng}`
     
-    var Url = document.getElementById("url");
+    var url = document.querySelector('#url');
     url.innerHTML = myLocationLink;
     // console.log(url.innerHTML)
     url.select();
-    document.execCommand("copy");
+    document.execCommand('copy');
   }
