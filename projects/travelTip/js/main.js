@@ -86,13 +86,12 @@ function getLatLng() {
 }
 
 function getWeather(obj) {
-    console.log(obj.data);
+    // console.log(obj.data);
     document.querySelector('.curr-temp').innerText = obj.data.main.temp;
-    document.querySelector('.wind-spd').innerText = obj.data.wind.speed;
-    document.querySelector('.max-temp').innerText = obj.data.main.temp_max;
-    document.querySelector('.min-temp').innerText = obj.data.main.temp_min;
+    document.querySelector('.wind-spd').innerText = obj.data.wind.speed + ' m/s';
     document.querySelector('.humidity').innerText = obj.data.main.humidity;
     document.querySelector('.desc').innerText = obj.data.weather[0].description;
+    document.querySelector('.clouds').innerText = obj.data.clouds.all;
     document.querySelector('.weather-icon').src = `http://openweathermap.org/img/w/${obj.data.weather[0].icon}.png`;
 }
 

@@ -89,6 +89,10 @@ main {
     text-transform: capitalize;
 }
 
+.weather .more-info .wind-spd {
+    text-transform: none;
+}
+
 .weather-icon {
     height: 150px;
 }

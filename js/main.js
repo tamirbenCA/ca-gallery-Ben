@@ -142,7 +142,7 @@ function initPage() {
         id: 16,
         name: 'memeGenerator',
         title: 'Meme generator',
-        desc: 'Meme Generator, responsive',
+        desc: 'Meme Generator. responsive',
         descL: 'The 2nd sprint of CA course. Team of twos where we have been asked to build a functional Meme Generator app works both on desktop machine and mobile, includes upload your own photo and download the result.',
         date: 'November 2017',
         category: 'Web Page'
@@ -151,7 +151,7 @@ function initPage() {
         id: 17,
         name: 'wikiTube',
         title: 'Wiki Tube',
-        desc: 'The ultimate cross-search engine for YouTube & Wikipedia, responsive',
+        desc: 'The ultimate cross-search engine for YouTube & Wikipedia. responsive',
         descL: 'Lorem....',
         date: 'November 2017',
         category: 'Web Page'
@@ -160,7 +160,7 @@ function initPage() {
         id: 18,
         name: 'travelTip',
         title: 'Travel Tip',
-        desc: 'Goole Map meets Open Weather. All in one page: Position Location, Weather at position, Search places on the map',
+        desc: 'Goole Map meets Open Weather. All in one page: Position Location, Weather at position, Search places on the map. responsive',
         descL: 'Lorem....',
         date: 'November 2017',
         category: 'Web Page'
